@@ -1,0 +1,359 @@
+/* Header Component Styles - White & Black Theme */
+
+.header {
+  background: var(--color-surface) !important;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0;
+  height: auto;
+  line-height: normal;
+  position: relative;
+  overflow: visible;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* Logo Styles */
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  height: 32px;
+  width: auto;
+}
+[data-theme="light"] .logo-image {
+  filter: invert(1);
+}
+
+/* Navigation Styles */
+.header-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.header-menu {
+  background: transparent !important;
+  border-bottom: none !important;
+  font-weight: 500;
+}
+
+.header-menu .ant-menu-item {
+  color: var(--color-text) !important;
+  border-bottom: 2px solid transparent !important;
+  margin: 0 8px;
+  padding: 0 16px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s ease;
+}
+
+.header-menu .ant-menu-item a {
+  color: var(--color-text) !important;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.header-menu .ant-menu-item:hover {
+  color: var(--color-text) !important;
+  background: var(--hover-bg) !important;
+}
+
+.header-menu .ant-menu-item:hover a {
+  color: var(--color-text) !important;
+}
+
+.header-menu .ant-menu-item-selected {
+  color: var(--color-text) !important;
+  background: var(--hover-bg) !important;
+}
+
+.header-menu .ant-menu-item-selected a {
+  color: var(--color-text) !important;
+}
+
+.header-menu .ant-menu-item-selected::after {
+  border-bottom: 2px solid var(--accent) !important;
+}
+
+/* Action Buttons */
+.header-actions {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.login-btn {
+  color: var(--color-text) !important;
+  border: none !important;
+  background: transparent !important;
+  font-weight: 500;
+  padding: 8px 16px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  color: var(--color-text) !important;
+  background: var(--hover-bg) !important;
+}
+
+.signup-btn {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent-contrast) !important;
+  font-weight: 500;
+  padding: 8px 20px;
+  height: auto;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  filter: brightness(0.9);
+}
+
+.signup-btn:focus {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent-contrast) !important;
+}
+
+.user-profile-btn {
+  color: var(--color-text) !important;
+  border: none !important;
+  background: transparent !important;
+  font-weight: 500;
+  padding: 8px 16px;
+  height: auto;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  position: relative;
+}
+
+.user-profile-btn:hover {
+  color: var(--color-text) !important;
+  background: var(--hover-bg) !important;
+}
+
+/* Dropdown Menu Styles */
+.user-dropdown {
+  z-index: 9999 !important;
+}
+
+.user-dropdown .ant-dropdown-menu {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  min-width: 200px !important;
+  z-index: 9999 !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item {
+  color: var(--color-text) !important;
+  padding: 8px 16px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item:hover {
+  background: var(--hover-bg) !important;
+  color: var(--color-text) !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item-disabled {
+  color: var(--color-muted) !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item-disabled:hover {
+  background: transparent !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item-divider {
+  background: var(--border-color) !important;
+}
+
+/* Global dropdown styles */
+.ant-dropdown {
+  z-index: 9999 !important;
+}
+
+.ant-dropdown-menu {
+  z-index: 9999 !important;
+  max-width: 250px !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+.ant-select-dropdown {
+  z-index: 9999 !important;
+  max-height: 200px !important;
+  overflow-y: auto !important;
+}
+
+.ant-picker-dropdown {
+  z-index: 9999 !important;
+}
+
+/* Task Actions Dropdown Styles */
+.task-actions-dropdown {
+  z-index: 9999 !important;
+}
+
+.task-actions-dropdown .ant-dropdown-menu {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  min-width: 150px !important;
+  z-index: 9999 !important;
+}
+
+.task-actions-dropdown .ant-dropdown-menu-item {
+  color: var(--color-text) !important;
+  padding: 8px 16px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.task-actions-dropdown .ant-dropdown-menu-item:hover {
+  background: var(--hover-bg) !important;
+}
+
+/* Select and DatePicker styling in modals */
+.ant-modal .ant-select-selector {
+  border: 1px solid var(--border-color) !important;
+  background: var(--color-surface) !important;
+}
+
+.ant-modal .ant-select-selector:hover {
+  border-color: var(--color-text) !important;
+}
+
+.ant-modal .ant-select-focused .ant-select-selector {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(0, 192, 58, 0.25) !important;
+}
+
+.ant-modal .ant-picker {
+  border: 1px solid var(--border-color) !important;
+  background: var(--color-surface) !important;
+}
+
+.ant-modal .ant-picker:hover {
+  border-color: var(--color-text) !important;
+}
+
+.ant-modal .ant-picker-focused {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(0, 192, 58, 0.25) !important;
+}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu-trigger {
+  color: var(--color-text) !important;
+  border: none !important;
+  background: transparent !important;
+  font-size: 18px;
+  padding: 8px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 16px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .header-logo .logo-image {
+    height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-nav {
+    margin: 0 20px;
+  }
+}
+
+
+/* Minimal dropdown fixes - no conflicts */
+.user-dropdown .ant-dropdown-menu {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  min-width: 200px !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item {
+  color: var(--color-text) !important;
+  padding: 8px 16px !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item:hover {
+  background: var(--hover-bg) !important;
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  color: var(--color-text) !important;
+}
+.theme-toggle-btn:hover {
+  background: var(--hover-bg) !important;
+}
+
+.task-actions-dropdown .ant-dropdown-menu {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  min-width: 150px !important;
+}
+
+.task-actions-dropdown .ant-dropdown-menu-item {
+  color: var(--color-text) !important;
+  padding: 8px 16px !important;
+}
+
+.task-actions-dropdown .ant-dropdown-menu-item:hover {
+  background: var(--hover-bg) !important;
+}
+
+/* Smooth transitions - exclude dropdowns */
+*:not(.ant-dropdown):not(.ant-dropdown-menu):not(.ant-dropdown-menu-item) {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* No transition for dropdown elements to prevent flickering */
+.ant-dropdown,
+.ant-dropdown-menu,
+.ant-dropdown-menu-item,
+.ant-select-dropdown,
+.ant-picker-dropdown {
+  transition: none !important;
+}

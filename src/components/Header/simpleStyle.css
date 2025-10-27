@@ -1,0 +1,69 @@
+/* Simple Header Component Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.simple-header {
+  background: var(--color-surface) !important;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0;
+  height: 64px;
+  line-height: normal;
+  position: relative;
+  z-index: 100;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.simple-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.simple-header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.simple-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-toggle-btn {
+  color: var(--color-text) !important;
+  border: none !important;
+  background: transparent !important;
+  font-size: 18px;
+  padding: 8px 12px !important;
+  height: auto !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle-btn:hover {
+  background: var(--hover-bg) !important;
+  color: var(--primary) !important;
+  transform: scale(1.05);
+}
+
+.menu-toggle-btn:focus {
+  background: var(--hover-bg) !important;
+  color: var(--primary) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .simple-header-container {
+    padding: 0 16px;
+  }
+
+  .simple-logo-image {
+    height: 28px;
+  }
+}
